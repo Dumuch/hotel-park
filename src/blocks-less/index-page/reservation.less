@@ -106,7 +106,7 @@
     line-height: 28px;
     .f-m-M;
     font-size: 18px;
-    color: #444444; 
+    color: #444444;
 
     &::-webkit-input-placeholder{
       .f-m-M;
@@ -453,5 +453,24 @@
       left: -50%;
       width: 200vw;
     }
+  }
+}
+
+@media (min-width: 1900px) {
+  .safari {
+
+    & .reservation {
+      order: 3;
+      background-color: transparent;
+    }
+
+    & .wrapper__reservation {
+      margin-left: calc(20% - 22px);
+
+      &::after {
+        left: 0;
+      }
+    }
+
   }
 }
