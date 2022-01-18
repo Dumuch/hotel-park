@@ -1,0 +1,22 @@
+.mp-0 {
+  margin: 0;
+  padding: 0;
+}
+.f-R {
+  font-family: "Bebas Neue Regular";
+}
+.f-m-R {
+  font-family: "Montserrat Regular";
+}
+.f-B {
+  font-family: "Bebas Neue Book";
+}
+.f-m-M {
+  font-family: "Montserrat Medium";
+}
+.button__off-styles {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}

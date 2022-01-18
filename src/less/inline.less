@@ -1,0 +1,40 @@
+@import "../less/variables.less";
+@import "../less/normalize.less";
+@import "../less/grid.less";
+
+.container {
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1728px;
+  }
+}
+
+@import "../blocks-less/main-header.less";

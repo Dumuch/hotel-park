@@ -1,0 +1,84 @@
+@import "../less/variables.less";
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/bebasneueregular.woff") format("woff"),
+  url("../fonts/bebasneueregular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("../fonts/bebasneuebook.woff") format("woff"),
+  url("../fonts/bebasneuebook.woff2") format("woff2");
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/montserrat_medium.woff") format("woff"),
+  url("../fonts/montserrat_medium.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/montserrat.woff") format("woff"),
+  url("../fonts/montserrat.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+  font-family: "Montserrat Regular", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: @black;
+}
+
+
+
+.index-page {
+  background-image: url('../img/background__first-screen.png');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+
+@import "../blocks-less/index-page/screens.less";

@@ -1,0 +1,51 @@
+@black: #1d1d1b;
+@jaco: #fa8a1c;
+@white: #ffffff;
+@blackOpacity: rgba(0, 0, 0, 0.35);
+
+.mp-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.curs-trans(@effectSetting: 0.2s, @opacity: 0.5) {
+  cursor: pointer;
+  transition: @effectSetting;
+
+  &:hover {
+    opacity: @opacity;
+  }
+
+  &:active {
+    opacity: calc(@opacity / 1.5);
+  }
+}
+
+.f-R {
+  font-family: "Bebas Neue Regular";
+}
+
+.f-m-R {
+  font-family: "Montserrat Regular";
+}
+
+.f-B {
+  font-family: "Bebas Neue Book";
+}
+
+.f-m-M {
+  font-family: "Montserrat Medium";
+}
+
+.button__off-styles {
+  .mp-0;
+  background-color: inherit;
+  border: none;
+}
+
+@media (max-width: 575px) {}
+@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 1200px) and (max-width: 1399px) {}
+@media (min-width: 1400px) {}
