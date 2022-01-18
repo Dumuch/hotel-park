@@ -781,6 +781,19 @@ body {
     display: none;
   }
 }
+.safari .index-page__background {
+  top: 220px;
+  width: 820px;
+}
+.safari .wrapper__index-page__background--hotel {
+  width: 920px;
+}
+.safari .index-page__background--smoke {
+  display: none;
+}
+.safari .index-page__background--hotel {
+  clip-path: none;
+}
 .index-page__background--hotel {
   position: relative;
   width: 100%;
@@ -844,6 +857,16 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .safari .index-page__background {
+    top: 220px;
+    width: 100%;
+  }
+  .safari .wrapper__index-page__background--hotel {
+    width: 100%;
+  }
+  .safari .index-page__background--hotel {
+    clip-path: none;
+  }
   .index-page__background--smoke {
     display: none;
   }
@@ -876,8 +899,26 @@ body {
   .index-page__svg-deer clipPath {
     transform: scale(0.5);
   }
+  .safari .index-page__background {
+    top: 220px;
+    width: 450px;
+  }
+  .safari .wrapper__index-page__background--hotel {
+    width: 500px;
+  }
+  .safari .index-page__background--hotel {
+    clip-path: none;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .safari .index-page__background {
+    top: 220px;
+    width: 300px;
+  }
+  .safari .index-page__background--hotel {
+    width: 600px;
+    clip-path: none;
+  }
   .wrapper__index-page__background--smoke {
     overflow: visible;
   }
@@ -912,11 +953,19 @@ body {
   }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
+  .safari .index-page__background {
+    top: 220px;
+    width: 600px;
+  }
+  .safari .index-page__background--hotel {
+    width: calc(100% - 150px);
+    clip-path: none;
+  }
   .wrapper__index-page__background--smoke {
     overflow: visible;
   }
   .wrapper__index-page__background--hotel {
-    width: 643px;
+    width: 920px;
     overflow: hidden;
   }
   .index-page__background--smoke {

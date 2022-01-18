@@ -45,6 +45,26 @@
   }
 }
 
+.safari {
+  & .index-page__background {
+    top: 220px;
+    width: 820px;
+  }
+
+  & .wrapper__index-page__background--hotel {
+    width: 920px;
+  }
+
+  & .index-page__background--smoke {
+    display: none;
+  }
+
+  & .index-page__background--hotel {
+    clip-path: none;
+  }
+}
+
+
 .index-page__background--hotel {
   position: relative;
   width: 100%;
@@ -118,6 +138,21 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .safari {
+    & .index-page__background {
+      top: 220px;
+      width: 100%;
+    }
+
+    & .wrapper__index-page__background--hotel {
+      width: 100%;
+    }
+
+    & .index-page__background--hotel {
+      clip-path: none;
+    }
+  }
+
   .index-page__background--smoke {
     display: none;
   }
@@ -159,8 +194,34 @@
     }
   }
 
+  .safari {
+    & .index-page__background {
+      top: 220px;
+      width: 450px;
+    }
+
+    & .wrapper__index-page__background--hotel {
+      width: 500px;
+    }
+
+    & .index-page__background--hotel {
+      clip-path: none;
+    }
+  }
+
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .safari {
+    & .index-page__background {
+      top: 220px;
+      width: 300px;
+    }
+    & .index-page__background--hotel {
+      width: 600px;
+      clip-path: none;
+    }
+  }
+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .index-page__background {
       top: 220px;
@@ -205,12 +266,23 @@
   }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
+  .safari {
+    & .index-page__background {
+      top: 220px;
+      width: 600px;
+    }
+    & .index-page__background--hotel {
+      width: calc(100% - 150px);
+      clip-path: none;
+    }
+  }
+
   .wrapper__index-page__background--smoke {
     overflow: visible;
   }
 
   .wrapper__index-page__background--hotel {
-    width: 643px;
+    width: 920px;
     overflow: hidden;
   }
 
